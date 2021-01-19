@@ -1,0 +1,129 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.container{
+  display: flex;
+  flex-shrink: 1;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+
+.card-body{
+  margin: 10px auto;
+  box-sizing: border-box;
+  padding: 10px;
+  width: 300px;
+  line-height: 1.8rem;
+}
+
+.image-body{
+  height: 200px;
+  width: 100%;
+}
+
+.image-body img{
+  height: 100%;
+  width: 100%;
+}
+
+.name-body{
+  margin: 0 auto;
+}
+
+.name-body h2{
+  color: #cb202d;
+  font-family: 'Dosis', sans-serif;
+  font-family: 'PT Serif', serif;
+}
+
+sup{
+  color: #000;
+  font-size: 12px;
+}
+
+.desc-body, .name-body h2{
+  white-space: nowrap;
+  overflow: hidden;
+  overflow: hidden;
+  -ms-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+}
+
+span{
+  color: #89959b;
+  font-family: 'Dosis', sans-serif;
+  font-family: 'PT Serif', serif;
+}
+
+.btn {
+  width: 100%;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: .25rem;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+
+}
+
+.btn-success{
+  color: #fff;
+  background-color: #28a745;
+  border-color: #28a745;
+  border-radius: 0;
+  margin: 2px;
+  font-size: 18px;
+}
+
+.form-control{
+  display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.form-group{
+  margin-bottom: 1rem;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.main-container{
+  position: relative;
+  height: 100vh;
+  width: 100%;
+}
+
+.success-msg, .failure-msg{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
